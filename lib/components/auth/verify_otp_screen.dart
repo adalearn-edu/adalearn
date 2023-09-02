@@ -1,5 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
+import 'package:adalearn/common_controllers/app_controller.dart';
 import 'package:adalearn/components/auth/auth_controller.dart';
 import 'package:adalearn_core/components/authantication/otp_verify_components.dart';
 import 'package:adalearn_core/components/common_components/buttons/hyper_text_button.dart';
@@ -40,6 +41,10 @@ class _VerifyOTPScreenState extends State<VerifyOTPScreen> {
               height: 24.w,
             ),
             VerifyOtpComponent.otpTextField(
+                onSucess: () {
+                  Navigator.popUntil(context, (route) => route.isFirst);
+                  Get.find<AppController>().initApp();
+                },
                 authController: Get.find<AuthController>()),
             SizedBox(
               height: 24.w,
