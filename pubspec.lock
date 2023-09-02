@@ -4,9 +4,11 @@ packages:
   adalearn_core:
     dependency: "direct main"
     description:
-      path: "../adalearn_core"
-      relative: true
-    source: path
+      path: "."
+      ref: hemant_core
+      resolved-ref: "47a31b1f1ce93bf5fc9d2f75aae147955089ce12"
+      url: "git@github.com:adalearn-edu/adalearn_core.git"
+    source: git
     version: "0.0.1"
   app_links:
     dependency: transitive

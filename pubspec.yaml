@@ -36,10 +36,10 @@ dependencies:
   persistent_bottom_nav_bar_v2: ^4.2.8
 
   adalearn_core:
-    path: ../adalearn_core
-    # git:
-    #   url: git@github.com:adalearn-edu/adalearn_core.git
-    #   ref: hemant_core
+    # path: ../adalearn_core
+    git:
+      url: git@github.com:adalearn-edu/adalearn_core.git
+      ref: hemant_core
 
 
   # The following adds the Cupertino Icons font to your application.
