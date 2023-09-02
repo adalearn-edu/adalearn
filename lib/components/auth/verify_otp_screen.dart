@@ -2,7 +2,7 @@
 
 import 'package:adalearn/common_controllers/app_controller.dart';
 import 'package:adalearn/components/auth/auth_controller.dart';
-import 'package:adalearn_core/components/authantication/otp_verify_components.dart';
+import 'package:adalearn_core/components/authentication/otp_verify_components.dart';
 import 'package:adalearn_core/components/common_components/buttons/hyper_text_button.dart';
 import 'package:adalearn_core/adalearn_core.dart';
 import 'package:flutter/material.dart';

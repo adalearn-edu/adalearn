@@ -1,3 +1,3 @@
-import 'package:adalearn_core/components/authantication/authantication_controller.dart';
+import 'package:adalearn_core/components/authentication/authentication_controller.dart';
 
 class AuthController extends BaseAuthController {}
