@@ -40,12 +40,14 @@ class _VerifyOTPScreenState extends State<VerifyOTPScreen> {
             SizedBox(
               height: 24.w,
             ),
-            VerifyOtpComponent.otpTextField(
-                onSucess: () {
-                  Navigator.popUntil(context, (route) => route.isFirst);
-                  Get.find<AppController>().initApp();
-                },
-                authController: Get.find<AuthController>()),
+            Obx(
+              () => VerifyOtpComponent.otpTextField(
+                  onSucess: () {
+                    Navigator.popUntil(context, (route) => route.isFirst);
+                    Get.find<AppController>().initApp();
+                  },
+                  authController: Get.find<AuthController>()),
+            ),
             SizedBox(
               height: 24.w,
             ),
